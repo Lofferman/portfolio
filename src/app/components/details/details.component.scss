@@ -1,0 +1,25 @@
+.outer{
+    height: 100vh;
+    width: 98vw;
+    background-color: #ffffff;
+}
+
+.photo-grid{    
+      @media (orientation: portrait) {
+            img {
+            height: 200px;
+            }
+      }
+}
+
+.right-black{
+    .title{
+        font-family: 'k2dBold', sans-serif;
+        font-size: 30px;
+        color: darkgray;
+        
+    }
+    .subtext{
+        font-size: 20px;
+    }
+}

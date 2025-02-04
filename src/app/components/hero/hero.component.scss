@@ -1,0 +1,60 @@
+.outer{
+    height: 100vh;
+    width: 100%;
+    background-color: #E1D769;
+    position: relative;
+    & > div{
+        width: 100%;
+    }
+}
+
+.name{
+    font-family: "k2dBOLD", sans-serif;
+    font-size: 30px;
+    width: 100%;
+}
+
+
+
+
+
+@media (min-width: 768px) {
+    /* Target devices wider than 768px. */
+    .black-portion{
+        background-color: black;
+        height: 100vh;
+        width: 500px;
+        position: relative;
+    
+        img{
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            top: 25%;
+            left: -100px;
+        }
+    }
+  }
+  
+  @media (max-width: 767px) {
+    /* Target devices narrower than 768px. */
+
+    .name{
+
+    }
+    .black-portion{
+        background-color: black;
+        height: 30vh;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    
+        img{
+            height: 13rem;
+            width: 13rem;
+            margin-top: -6.5rem;
+            display: grid;
+            justify-self: center;
+        }
+    }
+  }

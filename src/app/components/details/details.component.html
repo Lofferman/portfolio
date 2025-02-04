@@ -1,0 +1,14 @@
+<div class="outer">
+    <div class="row d-flex">
+        <div class="col m-3 photo-grid">
+           @for(photoUrl of photoGrid; track photoUrl){
+            <img [src]="photoUrl" alt="" srcset="">
+           }
+        </div>
+        <div class="col right-black align-items-end">
+            <div class="row title">DESIGN</div>
+            <span class="row subtext">Photography is a hobby of mine which fuels my creativity and sharpens my eye for detail, composition, and aesthetics. This passion directly enhances my web design work 
+                allowing me to craft visually appealing and user-focused digital experiences</span>
+        </div>
+    </div>
+</div>

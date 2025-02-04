@@ -1,0 +1,22 @@
+/* Importing Bootstrap SCSS file. */
+@use 'bootstrap/scss/bootstrap';
+
+/* You can add global styles to this file, and also import other style files */
+body{
+    display: block;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'k2d';
+    src: url('/fonts/K2D.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'k2dBOLD';
+    src: url('/fonts/K2D-Bold.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
