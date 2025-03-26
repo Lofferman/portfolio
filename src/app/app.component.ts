@@ -1,12 +1,17 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { HeroComponent } from './components/hero/hero.component';
+import { DetailsComponent } from './components/details/details.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { AboutContactComponent } from './components/about-contact/about-contact.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterModule
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'portfolio';
+  title = 'portfolio2025';
 }

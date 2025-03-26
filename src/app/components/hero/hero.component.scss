@@ -1,0 +1,66 @@
+.outer{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(229, 231, 235);
+    position: relative;
+}
+
+.name{
+    font-family: "k2dBOLD", sans-serif;
+    font-size: 30px;
+    width: 100%;
+}
+
+
+.black-portion img{
+    filter: grayscale(80%);
+    &:hover {filter:hue-rotate(0deg);}
+}
+
+
+
+@media (min-width: 768px) {
+    /* Target devices wider than 768px. */
+    .link-icons img{
+        height: 6rem;
+        width: 6rem;
+    }
+    .black-portion{
+        background-color: rgb(55 65 81/ 1);
+        height: 100vh;
+        width: 30%;
+        position: relative;
+    
+        img{
+            position: absolute;
+
+            width: 400px;
+            top: 25%;
+            left: -200px;
+            border-radius: 40px;
+        }
+    }
+  }
+  
+  @media (max-width: 767px) {
+    /* Target devices narrower than 768px. */
+    .link-icons img{
+        height: 5rem;
+        width: 5rem;
+    }
+    .black-portion{
+        background-color: rgb(55 65 81/ 1);
+        height: 30vh;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        
+        img{
+            height: 13rem;
+            border-radius: 40px;
+            margin-top: -6.5rem;
+            display: grid;
+            justify-self: center;
+        }
+    }
+  }
