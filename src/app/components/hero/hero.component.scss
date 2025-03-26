@@ -61,7 +61,7 @@ button{
   @media (max-width: 767px) {
     /* Target devices narrower than 768px. */
     .link-icons img{
-        height: 5rem;
+        height: auto;
         width: 5rem;
     }
     .black-portion{
