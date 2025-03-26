@@ -17,12 +17,28 @@
     &:hover {filter:hue-rotate(0deg);}
 }
 
+button{
+    border: 4px solid rgb(55, 65, 81);
+    background-color: rgb(229, 231, 235);
+    color: rgb(55, 65, 81);
+    font-weight: 600;
+    border-radius: 5px;
+    font-size: 20px;
+
+    &:hover{
+        color: rgb(229, 231, 235);
+        background-color: rgb(55, 65, 81);
+        transition: ease 200ms;
+    }
+}
+
+
 
 
 @media (min-width: 768px) {
     /* Target devices wider than 768px. */
     .link-icons img{
-        height: 6rem;
+        height: auto;
         width: 6rem;
     }
     .black-portion{
