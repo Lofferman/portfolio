@@ -20,7 +20,7 @@ export class ProjectsComponent {
     {
       name:'Portfolio',
       description:'My professional summary and personal projects',
-      image:'img/portfolio_img.jpg',
+      image:'img/portfolio_img.PNG',
       tech_list:['Angular', 'Bootstrap', 'SCSS', 'Typescript'],
       demo_link:'/',
       repo_link:'https://github.com/Lofferman',
