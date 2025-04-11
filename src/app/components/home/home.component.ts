@@ -10,7 +10,7 @@ import { ProjectsComponent } from '../projects/projects.component';
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
   ngAfterViewInit(){
     window.scroll({ 
       top: 0, 
@@ -18,7 +18,5 @@ export class HomeComponent implements OnInit {
       behavior: 'smooth' 
   });
   }
-  ngOnInit(){
-    
-  }
+
 }
