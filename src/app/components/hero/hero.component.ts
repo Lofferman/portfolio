@@ -10,7 +10,8 @@ export class HeroComponent implements AfterViewInit{
 
   constructor() {
   }
-  ngOnInit() {
+  ngOnInit(){
+    
 
   }
   ngAfterViewInit(): void {
