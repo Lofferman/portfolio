@@ -1,20 +1,17 @@
 .outer{
-    height: auto;
-    width: 100%;
-    background-color: rgb(55, 65, 81);
-    position: relative;
-    
+    height: 100vh;
+    width: 98vw;
+    background-color: #ffffff;
 }
-.row{width: inherit;}
 
-h3 {
-   color: rgb(229, 231, 235);
-   letter-spacing: -10px;
-//    font-size: 80px;
-   font-weight: 800;
-   line-height: 0.75;
-}
-.para{
-    color: rgb(229, 231, 235);
-    // width: 80%;
+.right-black{
+    .title{
+        font-family: 'k2dBold', sans-serif;
+        font-size: 30px;
+        color: darkgray;
+        
+    }
+    .subtext{
+        font-size: 20px;
+    }
 }

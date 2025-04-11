@@ -1,8 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { HeroComponent } from './components/hero/hero.component';
-import { DetailsComponent } from './components/details/details.component';
-import { ProjectsComponent } from './components/projects/projects.component';
-import { AboutContactComponent } from './components/about-contact/about-contact.component';
+import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
