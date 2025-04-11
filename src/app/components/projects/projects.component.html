@@ -14,11 +14,11 @@
                 </p>
                     <div class="row g-0 justify-content-center">
                         @if(project.demo_link){
-                            <button mat-button class="col-12 col-md mb-3 mb-md-0 me-md-3 pointer"><img class="" src="img/view.png" alt="" srcset="" [routerLink]="project.demo_link"></button>
+                            <button mat-button class="col-12 col-md mb-3 mb-md-0 me-md-3 pointer" [routerLink]="project.demo_link"><img  class="" src="img/view.png" alt="" srcset="" ></button>
                             
                         }
                         @if(project.repo_link){
-                            <button mat-button class="col-12 col-md mb-3 mb-md-0 ms-md-3 pointer"><img class="" src="img/github.png" alt="" srcset="" (click)="goTo(project.repo_link)"></button>
+                            <button mat-button class="col-12 col-md mb-3 mb-md-0 ms-md-3 pointer" (click)="goTo(project.repo_link)"><img class="" src="img/github.png" alt="" srcset="" ></button>
                         }
 
                     </div>
@@ -46,10 +46,10 @@
                 </p>
                     <div class="row g-0 justify-content-evenly">
                         @if(project.about_link){
-                            <button mat-button class="col-12 col-md mb-3 mb-md-0 pointer"><img class="" src="img/view.png" alt="" srcset="" [routerLink]="[project.about_link]" routerLinkActive="router-link-active"></button>
+                            <button mat-button class="col-12 col-md mb-3 mb-md-0 pointer" [routerLink]="[project.about_link]"><img class="" src="img/view.png" alt="" srcset=""  routerLinkActive="router-link-active"></button>
                         }
                         @if(project.repo_link){
-                            <button mat-button class="col-12 col-md mb-3 mb-md-0 pointer"><img class="" src="img/github.png" alt="" srcset="" (click)="goTo(project.repo_link)"></button>
+                            <button mat-button class="col-12 col-md mb-3 mb-md-0 pointer" (click)="goTo(project.repo_link)"><img class="" src="img/github.png" alt="" srcset="" ></button>
                         }
                     </div>
                   
