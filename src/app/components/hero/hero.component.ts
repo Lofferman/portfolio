@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, effect, ElementRef, OnInit, signal, ViewChild } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
 
 @Component({
   selector: 'app-hero',
@@ -10,7 +10,8 @@ export class HeroComponent implements AfterViewInit{
 
   constructor() {
   }
-  ngOnInit() {
+  ngOnInit(){
+    
 
   }
   ngAfterViewInit(): void {

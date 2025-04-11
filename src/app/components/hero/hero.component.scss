@@ -32,6 +32,28 @@ button{
     }
 }
 
+.link-icons img {
+    animation: wiggle 2.5s infinite;
+    &:hover{
+        animation: bounce 0.5s infinite;
+    }
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(10deg); }
+   95% { transform: rotate(-10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0px); }
+   10% { transform: translateY(10px); }
+   50% { transform: translateY(0px); }
+   90% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
 
 
 
