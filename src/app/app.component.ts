@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
-import { HeroComponent } from './components/hero/hero.component';
-import { DetailsComponent } from './components/details/details.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [HeroComponent, DetailsComponent],
+  imports: [RouterModule
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
+export class AppComponent{
   title = 'portfolio2025';
+
 }

@@ -1,0 +1,111 @@
+<div class="outer g-0 row d-flex" >
+    <div class="col-12 justify-content-center">
+        <img class="heading-img mb-4 col-12 d-flex d-md-none" loading="lazy" src="img/bull.jpg" alt="">
+    </div>
+        <div class="row g-0 ps-md-4 pt-md-4 d-flex justify-content-center mt-5">
+            <div class="col-3 sticky-side-img d-none d-md-block">
+                <img loading="lazy" [src]="sidebarImages[0]" class="image my-3">
+                <img loading="lazy" [src]="sidebarImages[1]" class="image my-3">
+                <img loading="lazy" [src]="sidebarImages[2]" class="image my-3">
+                <img loading="lazy" [src]="sidebarImages[3]" class="image my-3">
+            </div>
+<div class="col-8">
+    <header>
+        <h1>A Personalized 5/3/1 Application: A Tool Built for Simplicity</h1>
+    </header>
+
+    <section>
+        <p>As a hobbyist powerlifter with a decade of experience in lifting, I've spent the last three years focusing on powerlifting specifically. Over time, I've come to realize the importance of technique and form over simply chasing heavier weights. One thing that has always bothered me, though, is the mental math involved when preparing the bar for my lifts. Calculating plate requirements for my sets—especially with the 5/3/1 program—was always a hassle, especially when I wanted to conserve mental energy for my lifts rather than focus on math.</p>
+        
+        <p>So, I decided to create a solution. Over the past year, I've built and refined an application to streamline this process for myself. The app focuses on simplifying the experience of following the 5/3/1 program and removing any distractions that come from figuring out the exact weights I need to lift. Now, my workouts are more focused, and I can concentrate solely on technique. In this post, I'll walk you through the features of the application and how it has revolutionized my training sessions.</p>
+    </section>
+
+    <section>
+        <h2>What is the 5/3/1 Method?</h2>
+        <p>For those who are unfamiliar, the 5/3/1 program is a popular and effective strength training methodology developed by Jim Wendler. It is designed to gradually increase the maximum weight you can lift in the four major compound lifts: squat, bench press, deadlift, and overhead press. The program is built around four-week cycles that alternate between heavy, medium, and light loads. The 5/3/1 program is structured as follows:</p>
+        
+        <ul>
+            <li><strong>Week 1:</strong> 3 sets of 5 reps at 65%, 75%, and 85% of your training max.</li>
+            <li><strong>Week 2:</strong> 3 sets of 3 reps at 70%, 80%, and 90% of your training max.</li>
+            <li><strong>Week 3:</strong> 3 sets of 5, 3, and 1 rep at 75%, 85%, and 95% of your training max.</li>
+            <li><strong>Week 4:</strong> Deload week, where you work at lighter weights to give your body a chance to recover.</li>
+        </ul>
+        
+        <p>By gradually increasing the weight and volume over time, the 5/3/1 program helps lifters break through plateaus and make consistent strength gains. But while the program is highly effective, it also requires a lot of math—calculating your training max, working weights, and figuring out how many plates you need to load on the bar. This is where my application comes in, simplifying the process and allowing me to focus entirely on my lifts.</p>
+    </section>
+
+    <section>
+        <h2 id="header-home">Key Features of the 5/3/1 Powerlifting Application</h2>
+
+        <h3 id="header-modules">1. Squat, Bench, Deadlift, and Overhead Press Modules</h3>
+        <p>The core of the application revolves around four distinct modules for each of the primary lifts: squat, bench press, deadlift, and overhead press. For each module, you enter your <strong>training max</strong> in pounds (the maximum weight you can lift for one rep). From there, the app will automatically calculate the following four sections based on the 5/3/1 methodology:</p>
+        
+        <ul>
+            <li><strong>5/5/5+:</strong> This is your first set for the day. It will provide the weight, the number of reps, and any necessary adjustments.</li>
+            <li><strong>3/3/3+:</strong> Your second set, following the same format of weight, reps, and adjustments.</li>
+            <li><strong>5/3/1+:</strong> The final set, which usually involves a top set of one rep at the highest weight.</li>
+            <li><strong>Deload:</strong> A lighter, recovery set that helps reduce fatigue and allows for muscle recovery.</li>
+        </ul>
+        
+        <p>For each of these sections, the app will not only give you the weight you need to lift, but it will also tell you exactly how many plates are required per side of the bar, making sure you don't have to do any mental math or search through another app. This feature alone has saved me so much time and effort!</p>
+
+        <h3 id="header-plateCalc">2. Plate Calculator</h3>
+        <p>There are many times when I find myself doing a lift outside the 5/3/1 program, and I don't need all the set calculations—just the plate requirements for the given lift. This is where the <strong>Plate Calc</strong> feature comes into play. You simply input the desired weight for your lift, and the app will calculate the number of plates required for the lift, broken down by each side of the barbell.</p>
+        
+        <p>Whether you're following the 5/3/1 program or doing your own custom training session, this feature ensures that you never waste time figuring out how many plates to load.</p>
+
+        <h3 id="header-settings">3. Settings Customization</h3>
+        <p>One of the best things about this application is its ability to be tailored to your specific needs. Under the <strong>Settings</strong> section, you can customize the app to fit your lifting preferences:</p>
+
+        <ul>
+            <li><strong>Rounding Strategy:</strong> This feature allows you to choose how the app rounds the weight for your sets. You can opt for:
+                <ul>
+                    <li><strong>Up:</strong> The app rounds up to the nearest weight.</li>
+                    <li><strong>Nearest:</strong> The app rounds to the closest available weight.</li>
+                    <li><strong>Down:</strong> The app rounds down to the nearest weight.</li>
+                </ul>
+            </li>
+            <li><strong>Precision:</strong> For lifters who prefer to fine-tune their numbers, this setting gives you the option to adjust the precision of the weights. You can choose between:
+                <ul>
+                    <li><strong>2.5 lbs</strong></li>
+                    <li><strong>5.0 lbs</strong></li>
+                    <li><strong>10.0 lbs</strong></li>
+                </ul>
+            </li>
+            <li><strong>Training Max:</strong> To personalize your experience even further, the app allows you to select the percentage of your 1-rep max that you want to use for your training max:
+                <ul>
+                    <li><strong>90%:</strong> A more conservative approach, ideal for those looking for more manageable lifts.</li>
+                    <li><strong>95%:</strong> A slightly more challenging option, but still safe for progress.</li>
+                    <li><strong>100%:</strong> For those who want to push themselves to their absolute max.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <p>These settings give me total control over how the program is applied to my individual training, making it much more versatile than other generic powerlifting apps.</p>
+    </section>
+    <section>
+        <h2>Progressively improving</h2>
+        <i>Work is never done and learning is never complete</i>
+        <p class="mt-3">Below are future improvements:</p>
+        <ul>
+            <li><strong>Custom modules:</strong> This feature will allow you to add more lifts, enabling you to track and improve your performance using the same methodology.
+            </li>
+            <li><strong>Add / reduce weight:</strong> The core principle of 5/3/1 is continuous improvement. Therefore, you should be gradually increasing your weights throughout the program. To make this easier, I will be adding incremental and decremental buttons in each module's max lift input, enabling quicker weight adjustments:
+                <ul>
+                    <li><strong>-/+ 2.5 lbs</strong></li>
+                    <li><strong>-/+ 5.0 lbs</strong></li>
+                </ul>
+            </li>
+            <li><strong>Export:</strong> Based on feedback from potential users, the need for an export feature became clear for long-term use. Many users have been maintaining their lifelong training records in an Excel sheet and wish to keep redundant records there for consistency and backup.
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2>Conclusion</h2>
+        <p>As a powerlifter who wants to focus on technique rather than spending time on mental math, this application has been a game-changer. By automating the calculations for weights, reps, and plates, it allows me to get straight to the lifting without unnecessary distractions. Whether I'm following the 5/3/1 program or customizing my own routine, this app simplifies the process and keeps me focused on what matters most: perfecting my form and increasing my strength.</p>
+
+        <p>If you're a powerlifter looking for a way to streamline your training and avoid the mental math that can slow you down, I highly recommend giving this application a try. It's been a vital tool in my own training, and I'm excited to see how it can help other lifters achieve their goals more efficiently.</p>
+    </section>
+</div>
+</div>
+</div>

@@ -8,7 +8,7 @@ body{
 }
 
 @font-face {
-    font-family: 'k2d';
+    font-family: k2dRegular;
     src: url('/fonts/K2D.ttf') format('opentype');
     font-weight: normal;
     font-style: normal;
@@ -20,3 +20,25 @@ body{
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'k2dSEMIBOLD';
+    src: url('/fonts/K2D-SemiBold.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* { 
+    font-family: k2dRegular, sans-serif;
+    font-size: 20px;
+}
+
+.section-heading {
+    color: rgb(55, 65, 81);
+    letter-spacing: -10px;
+    font-size: 80px;
+    font-weight: 800;
+ }
+
+ .pointer{
+    cursor: pointer;
+ }

@@ -1,0 +1,60 @@
+<div class="outer g-0 row justify-content-center d-flex py-5">
+    <span class="col-12 justify-content-center d-flex mb-5 pb-5 mx-auto text-center"><h2 class="">Personal Projects</h2></span>
+
+          @for(project of TECH_PROJECTS; track project.name){
+            <div class="card col-auto col-md-6 my-5 m-md-auto" style="width: 18rem;">
+                <img [src]="project.image" class="card-img-top my-4 px-4" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{project.name}}</h5>
+                  <p class="card-text">{{project.description}}</p>
+                  <p class="card-tech-list">
+                    @for(item of project.tech_list; track item){
+                        <p class="item">{{item}}</p>
+                    }
+                </p>
+                    <div class="row g-0 justify-content-center">
+                        @if(project.demo_link){
+                            <button mat-button class="col-12 col-md mb-3 mb-md-0 me-md-3 pointer"><img class="" src="img/view.png" alt="" srcset="" [routerLink]="project.demo_link"></button>
+                            
+                        }
+                        @if(project.repo_link){
+                            <button mat-button class="col-12 col-md mb-3 mb-md-0 ms-md-3 pointer"><img class="" src="img/github.png" alt="" srcset="" (click)="goTo(project.repo_link)"></button>
+                        }
+
+                    </div>
+                  
+                </div>
+              </div>
+            
+          }
+
+        </div>
+        <div class="outer g-0 row justify-content-center d-flex">
+
+          <span class="col-12 justify-content-center d-flex mb-5 pb-5 mx-auto text-center"><h2 class="">Non-web development projects illustrating technical competance</h2></span>
+
+          @for(project of NON_RELEVENT_PROJECTS; track project.name){
+            <div class="card col-auto col-md-6 my-5 m-md-auto" style="width: 18rem;">
+                <img [src]="project.image" class="card-img-top my-4 px-4" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{project.name}}</h5>
+                  <p class="card-text">{{project.description}}</p>
+                  <p class="card-tech-list">
+                    @for(item of project.tech_list; track item){
+                        <p class="item">{{item}}</p>
+                    }
+                </p>
+                    <div class="row g-0 justify-content-evenly">
+                        @if(project.about_link){
+                            <button mat-button class="col-12 col-md mb-3 mb-md-0 pointer"><img class="" src="img/view.png" alt="" srcset="" [routerLink]="[project.about_link]" routerLinkActive="router-link-active"></button>
+                        }
+                        @if(project.repo_link){
+                            <button mat-button class="col-12 col-md mb-3 mb-md-0 pointer"><img class="" src="img/github.png" alt="" srcset="" (click)="goTo(project.repo_link)"></button>
+                        }
+                    </div>
+                  
+                </div>
+              </div>
+            
+          }
+        </div>

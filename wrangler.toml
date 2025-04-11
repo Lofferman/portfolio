@@ -1,0 +1,9 @@
+name = "portfolio"
+type = "webpack"
+account_id = '457508333b09817190da4e9a72a05844'
+zone_id = ''
+usage_model = ''
+compatibility_flags = []
+workers_dev = true
+site = {bucket = "./dist/portfolio2025"}
+compatibility_date = "2025-03-26"

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
 
 @Component({
   selector: 'app-hero',
@@ -6,6 +6,20 @@ import { Component } from '@angular/core';
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss'
 })
-export class HeroComponent {
+export class HeroComponent implements AfterViewInit{
+
+  constructor() {
+  }
+  ngOnInit(){
+    
+
+  }
+  ngAfterViewInit(): void {
+    
+
+  }
+  goTo(url: string){
+    window.open(url, '_blank');
+  }
 
 }
